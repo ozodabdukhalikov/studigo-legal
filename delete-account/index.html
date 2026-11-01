@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Learn how to request deletion of your STUDIGO account and associated personal data.">
+  <meta name="description" content="Learn how to delete your STUDIGO account in English, Russian and Uzbek.">
   <title>Delete Account | STUDIGO</title>
 
   <style>
@@ -59,6 +59,8 @@
       margin-left: 18px;
     }
 
+    nav a:hover { color: var(--primary); }
+
     main {
       max-width: 900px;
       margin: 55px auto;
@@ -83,7 +85,36 @@
     .subtitle {
       color: var(--muted);
       font-size: 16px;
-      margin-bottom: 30px;
+      margin-bottom: 24px;
+    }
+
+    .language-switcher {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 24px 0;
+    }
+
+    .lang-btn {
+      padding: 10px 18px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--navy);
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .lang-btn:hover {
+      border-color: var(--primary);
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
     }
 
     .panel {
@@ -96,11 +127,13 @@
     h2 {
       font-size: 21px;
       margin: 30px 0 12px;
+      line-height: 1.4;
     }
 
     h2:first-child { margin-top: 0; }
 
     p, li { font-size: 15px; }
+    p { margin: 0 0 16px; }
     li { margin-bottom: 10px; }
 
     .steps { padding-left: 22px; }
@@ -116,14 +149,17 @@
       margin: 15px 0;
     }
 
-    .button:hover { background: #5e3fd0; }
+    .button:hover {
+      background: #5e3fd0;
+    }
 
     .notice {
       background: #f4f0ff;
       border-left: 4px solid var(--primary);
       padding: 18px;
       border-radius: 8px;
-      margin-top: 24px;
+      margin: 24px 0;
+      font-size: 15px;
     }
 
     .info-box {
@@ -132,6 +168,10 @@
       border-radius: 12px;
       padding: 18px;
       margin: 18px 0;
+    }
+
+    .info-box p {
+      margin: 8px 0 0;
     }
 
     a { color: var(--primary); }
@@ -154,6 +194,7 @@
       main { margin: 35px auto; }
       .panel { padding: 24px 20px; }
       nav a { margin-left: 10px; font-size: 12px; }
+      .lang-btn { flex: 1; padding: 10px 8px; }
     }
   </style>
 </head>
@@ -164,8 +205,8 @@
   <div class="header-inner">
     <a href="../" class="logo">studi<span>go</span></a>
     <nav>
-      <a href="../">Home</a>
-      <a href="../privacy-policy/">Privacy Policy</a>
+      <a href="../" id="home-link">Home</a>
+      <a href="../privacy-policy/" id="privacy-link">Privacy Policy</a>
     </nav>
   </div>
 </header>
@@ -173,271 +214,635 @@
 <main>
   <div class="eyebrow">STUDIGO · Legal Center</div>
 
-  <h1>Delete Your Account</h1>
+  <h1 id="page-title">Delete Your Account</h1>
 
-  <p class="subtitle">
+  <p class="subtitle" id="page-subtitle">
     STUDIGO allows students and suppliers to request
     permanent deletion of their accounts and associated
     personal data directly through the application.
   </p>
 
-  <section class="panel">
+  <div class="language-switcher" role="group" aria-label="Language">
+    <button type="button" class="lang-btn active"
+            data-lang="en" aria-pressed="true">English</button>
+    <button type="button" class="lang-btn"
+            data-lang="ru" aria-pressed="false">Русский</button>
+    <button type="button" class="lang-btn"
+            data-lang="uz" aria-pressed="false">O‘zbekcha</button>
+  </div>
 
-    <h2>1. Delete Your Account in the App</h2>
-
-    <p>
-      You can submit an account deletion request
-      directly from the STUDIGO mobile application.
-    </p>
-
-    <ol class="steps">
-      <li>Open the STUDIGO application.</li>
-      <li>Sign in to your account.</li>
-      <li>Open your Profile.</li>
-      <li>Go to Settings.</li>
-      <li>Find the Delete Account option.</li>
-      <li>Read the information about account deletion.</li>
-      <li>Confirm your deletion request.</li>
-    </ol>
-
-    <div class="notice">
-      <strong>No administrator approval is required.</strong>
-      Account deletion requests submitted through
-      the application are registered and processed
-      automatically by the STUDIGO server.
-      Deletion is not necessarily immediate.
-    </div>
-
-    <h2>2. Request Deletion by Email</h2>
-
-    <p>
-      If you cannot access your account or the
-      application, you may request deletion by
-      contacting STUDIGO Support.
-    </p>
-
-    <ol class="steps">
-      <li>
-        Send an email to STUDIGO Support.
-      </li>
-      <li>
-        Use the email address associated with your
-        STUDIGO account, if available.
-      </li>
-      <li>
-        Include your registered email address or
-        phone number to help us locate your account.
-      </li>
-      <li>
-        Our support team may request additional
-        information to verify account ownership.
-      </li>
-      <li>
-        Once verified, your request can be
-        submitted for account deletion processing.
-      </li>
-    </ol>
-
-    <a class="button"
-       href="mailto:studigo.uz@gmail.com?subject=STUDIGO%20Account%20Deletion%20Request">
-      Request Account Deletion
-    </a>
-
-    <p>
-      Contact:
-      <a href="mailto:studigo.uz@gmail.com">
-        studigo.uz@gmail.com
-      </a>
-    </p>
-
-    <h2>3. How Account Deletion Works</h2>
-
-    <p>
-      When a valid deletion request is submitted
-      through the application, STUDIGO registers
-      the request for automated server processing.
-    </p>
-
-    <ul>
-      <li>
-        The request is recorded in the system.
-      </li>
-      <li>
-        The server processes eligible deletion requests.
-      </li>
-      <li>
-        Account and associated personal data are
-        removed or anonymized according to the
-        applicable deletion process.
-      </li>
-      <li>
-        After deletion is completed, the deleted
-        account cannot be restored.
-      </li>
-    </ul>
-
-    <p>
-      Submitting a request does not mean that
-      deletion has already been completed.
-    </p>
-
-    <h2>4. Student Accounts</h2>
-
-    <p>
-      Student users can request deletion of their
-      accounts directly from the application.
-    </p>
-
-    <p>
-      Once processed, deletion may result in
-      permanent loss of profile information,
-      student verification details, saved offers,
-      referral benefits, reward points and
-      account history.
-    </p>
-
-    <h2>5. Supplier Accounts</h2>
-
-    <p>
-      Suppliers can also request deletion of
-      their STUDIGO accounts through the application.
-    </p>
-
-    <p>
-      However, supplier account deletion may be
-      restricted when outstanding withdrawal
-      requests or pending financial obligations
-      exist.
-    </p>
-
-    <div class="info-box">
-      <strong>Pending withdrawals</strong>
-      <p>
-        Supplier accounts with pending withdrawals
-        cannot be deleted until the relevant
-        withdrawal obligations have been resolved.
-      </p>
-    </div>
-
-    <h2>6. Administrative Account Deletion</h2>
-
-    <p>
-      Authorized STUDIGO administrators may initiate
-      account deletion for Student and Supplier
-      accounts through the administrative interface.
-    </p>
-
-    <p>
-      These requests are subject to server-side
-      authorization and account eligibility checks.
-      Administrators cannot use this function
-      to delete other administrator accounts.
-    </p>
-
-    <h2>7. What Data Will Be Deleted?</h2>
-
-    <p>
-      Depending on the account type and the data
-      associated with it, deletion may include:
-    </p>
-
-    <ul>
-      <li>Account and authentication information.</li>
-      <li>Personal profile and contact details.</li>
-      <li>Student profile and verification information.</li>
-      <li>Profile photographs and student identifiers.</li>
-      <li>Referral information and reward balances.</li>
-      <li>Favorites and account preferences.</li>
-      <li>
-        Other associated personal data that
-        is no longer required.
-      </li>
-    </ul>
-
-    <h2>8. What Data May Be Retained?</h2>
-
-    <p>
-      Certain records may be retained where
-      necessary to comply with applicable laws,
-      accounting obligations, fraud prevention,
-      security requirements or dispute resolution.
-    </p>
-
-    <p>
-      This may include transaction records,
-      payment-related information and records
-      relating to outstanding financial obligations.
-    </p>
-
-    <p>
-      Where appropriate, retained records may
-      be anonymized or separated from directly
-      identifying account information.
-    </p>
-
-    <p>
-      Retained data will be limited to what is
-      necessary for the relevant purpose and
-      retained only for the applicable period.
-    </p>
-
-    <h2>9. Important Information</h2>
-
-    <ul>
-      <li>
-        Account deletion is intended to be permanent.
-      </li>
-      <li>
-        Deleted accounts cannot be restored
-        after processing is completed.
-      </li>
-      <li>
-        Deletion may result in loss of discounts,
-        subscriptions, reward points, saved offers
-        and other account benefits.
-      </li>
-      <li>
-        Uninstalling the STUDIGO application
-        does not delete your account.
-      </li>
-      <li>
-        Signing out does not delete your account.
-      </li>
-      <li>
-        Email requests may require identity
-        verification before processing.
-      </li>
-    </ul>
-
-    <div class="notice">
-      <strong>Your privacy matters.</strong>
-      For more information about the collection,
-      processing and protection of personal data,
-      please read our
-      <a href="../privacy-policy/">Privacy Policy</a>.
-    </div>
-
-    <h2>10. Contact</h2>
-
-    <p>
-      <strong>STUDIGO Support</strong><br>
-      Uzbekistan<br>
-      Email:
-      <a href="mailto:studigo.uz@gmail.com">
-        studigo.uz@gmail.com
-      </a>
-    </p>
-
-  </section>
+  <section class="panel" id="deletion-content"></section>
 </main>
 
 <footer>
   <span>© 2026 STUDIGO. All rights reserved.</span>
-  <span>
-    <a href="../">Legal Center</a> ·
-    <a href="../privacy-policy/">Privacy Policy</a>
-  </span>
+  <span id="footer-links"></span>
 </footer>
+
+<script>
+const pages = {
+
+  en: {
+    title: "Delete Your Account",
+    subtitle: "STUDIGO allows students and suppliers to request permanent deletion of their accounts and associated personal data directly through the application.",
+    home: "Home",
+    privacy: "Privacy Policy",
+    legal: "Legal Center",
+
+    sections: [
+      {
+        title: "1. Delete Your Account in the App",
+        content: `
+          <p>You can submit an account deletion request
+          directly from the STUDIGO mobile application.</p>
+
+          <ol class="steps">
+            <li>Open the STUDIGO application.</li>
+            <li>Sign in to your account.</li>
+            <li>Open your Profile.</li>
+            <li>Go to Settings.</li>
+            <li>Find the Delete Account option.</li>
+            <li>Read the information about account deletion.</li>
+            <li>Confirm your deletion request.</li>
+          </ol>
+
+          <div class="notice">
+            <strong>No administrator approval is required.</strong>
+            Account deletion requests submitted through the
+            application are registered and processed automatically
+            by the STUDIGO server. Deletion is not necessarily immediate.
+          </div>`
+      },
+      {
+        title: "2. Request Deletion by Email",
+        content: `
+          <p>If you cannot access your account or the application,
+          you may request deletion by contacting STUDIGO Support.</p>
+
+          <ol class="steps">
+            <li>Send an email to STUDIGO Support.</li>
+            <li>Use the email address associated with your STUDIGO account, if available.</li>
+            <li>Include your registered email address or phone number to help us locate your account.</li>
+            <li>Our support team may request additional information to verify account ownership.</li>
+            <li>Once verified, your request can be submitted for account deletion processing.</li>
+          </ol>
+
+          <a class="button" href="mailto:studigo.uz@gmail.com?subject=STUDIGO%20Account%20Deletion%20Request">
+            Request Account Deletion
+          </a>
+
+          <p>Contact:
+          <a href="mailto:studigo.uz@gmail.com">studigo.uz@gmail.com</a></p>`
+      },
+      {
+        title: "3. How Account Deletion Works",
+        content: `
+          <p>When a valid deletion request is submitted through
+          the application, STUDIGO registers the request for
+          automated server processing.</p>
+
+          <ul>
+            <li>The request is recorded in the system.</li>
+            <li>The server processes eligible deletion requests.</li>
+            <li>Account and associated personal data are removed or anonymized according to the applicable deletion process.</li>
+            <li>After deletion is completed, the deleted account cannot be restored.</li>
+          </ul>
+
+          <p>Submitting a request does not mean that deletion
+          has already been completed.</p>`
+      },
+      {
+        title: "4. Student Accounts",
+        content: `
+          <p>Student users can request deletion of their accounts
+          directly from the application.</p>
+
+          <p>Once processed, deletion may result in permanent loss
+          of profile information, student verification details,
+          saved offers, referral benefits, reward points and
+          account history.</p>`
+      },
+      {
+        title: "5. Supplier Accounts",
+        content: `
+          <p>Suppliers can also request deletion of their STUDIGO
+          accounts through the application.</p>
+
+          <p>However, supplier account deletion may be restricted
+          when outstanding withdrawal requests or pending
+          financial obligations exist.</p>
+
+          <div class="info-box">
+            <strong>Pending withdrawals</strong>
+            <p>Supplier accounts with pending withdrawals cannot
+            be deleted until the relevant withdrawal obligations
+            have been resolved.</p>
+          </div>`
+      },
+      {
+        title: "6. Administrative Account Deletion",
+        content: `
+          <p>Authorized STUDIGO administrators may initiate
+          account deletion for Student and Supplier accounts
+          through the administrative interface.</p>
+
+          <p>These requests are subject to server-side
+          authorization and account eligibility checks.
+          Administrators cannot use this function to
+          delete other administrator accounts.</p>`
+      },
+      {
+        title: "7. What Data Will Be Deleted?",
+        content: `
+          <p>Depending on the account type and the data
+          associated with it, deletion may include:</p>
+
+          <ul>
+            <li>Account and authentication information.</li>
+            <li>Personal profile and contact details.</li>
+            <li>Student profile and verification information.</li>
+            <li>Profile photographs and student identifiers.</li>
+            <li>Referral information and reward balances.</li>
+            <li>Favorites and account preferences.</li>
+            <li>Other associated personal data that is no longer required.</li>
+          </ul>`
+      },
+      {
+        title: "8. What Data May Be Retained?",
+        content: `
+          <p>Certain records may be retained where necessary
+          to comply with applicable laws, accounting obligations,
+          fraud prevention, security requirements or dispute resolution.</p>
+
+          <p>This may include transaction records, payment-related
+          information and records relating to outstanding
+          financial obligations.</p>
+
+          <p>Where appropriate, retained records may be anonymized
+          or separated from directly identifying account information.</p>
+
+          <p>Retained data will be limited to what is necessary
+          for the relevant purpose and retained only for
+          the applicable period.</p>`
+      },
+      {
+        title: "9. Important Information",
+        content: `
+          <ul>
+            <li>Account deletion is intended to be permanent.</li>
+            <li>Deleted accounts cannot be restored after processing is completed.</li>
+            <li>Deletion may result in loss of discounts, subscriptions, reward points, saved offers and other account benefits.</li>
+            <li>Uninstalling the STUDIGO application does not delete your account.</li>
+            <li>Signing out does not delete your account.</li>
+            <li>Email requests may require identity verification before processing.</li>
+          </ul>
+
+          <div class="notice">
+            <strong>Your privacy matters.</strong>
+            For more information about the collection, processing
+            and protection of personal data, please read our
+            <a href="../privacy-policy/">Privacy Policy</a>.
+          </div>`
+      },
+      {
+        title: "10. Contact",
+        content: `
+          <p><strong>STUDIGO Support</strong><br>
+          Uzbekistan<br>
+          Email:
+          <a href="mailto:studigo.uz@gmail.com">studigo.uz@gmail.com</a></p>`
+      }
+    ]
+  },
+
+  ru: {
+    title: "Удаление аккаунта",
+    subtitle: "STUDIGO позволяет студентам и поставщикам запрашивать безвозвратное удаление аккаунтов и связанных персональных данных непосредственно через приложение.",
+    home: "Главная",
+    privacy: "Политика конфиденциальности",
+    legal: "Юридическая информация",
+
+    sections: [
+      {
+        title: "1. Удаление аккаунта через приложение",
+        content: `
+          <p>Вы можете отправить запрос на удаление аккаунта
+          непосредственно через мобильное приложение STUDIGO.</p>
+
+          <ol class="steps">
+            <li>Откройте приложение STUDIGO.</li>
+            <li>Войдите в свой аккаунт.</li>
+            <li>Откройте раздел Profile (Профиль).</li>
+            <li>Перейдите в Settings (Настройки).</li>
+            <li>Найдите пункт Delete Account (Удалить аккаунт).</li>
+            <li>Прочитайте информацию об удалении аккаунта.</li>
+            <li>Подтвердите запрос на удаление.</li>
+          </ol>
+
+          <div class="notice">
+            <strong>Одобрение администратора не требуется.</strong>
+            Запросы, отправленные через приложение, регистрируются
+            и автоматически обрабатываются сервером STUDIGO.
+            Удаление может произойти не сразу.
+          </div>`
+      },
+      {
+        title: "2. Запрос на удаление по электронной почте",
+        content: `
+          <p>Если вы не можете войти в аккаунт или открыть
+          приложение, запросите удаление через службу
+          поддержки STUDIGO.</p>
+
+          <ol class="steps">
+            <li>Отправьте письмо в службу поддержки STUDIGO.</li>
+            <li>По возможности используйте email, привязанный к аккаунту STUDIGO.</li>
+            <li>Укажите зарегистрированный email или номер телефона, чтобы мы могли найти ваш аккаунт.</li>
+            <li>Служба поддержки может запросить дополнительные сведения для подтверждения владельца аккаунта.</li>
+            <li>После проверки ваш запрос может быть передан на обработку удаления аккаунта.</li>
+          </ol>
+
+          <a class="button" href="mailto:studigo.uz@gmail.com?subject=STUDIGO%20Account%20Deletion%20Request">
+            Запросить удаление аккаунта
+          </a>
+
+          <p>Контакт:
+          <a href="mailto:studigo.uz@gmail.com">studigo.uz@gmail.com</a></p>`
+      },
+      {
+        title: "3. Как происходит удаление аккаунта",
+        content: `
+          <p>Когда через приложение отправляется допустимый
+          запрос на удаление, STUDIGO регистрирует его
+          для автоматической обработки сервером.</p>
+
+          <ul>
+            <li>Запрос сохраняется в системе.</li>
+            <li>Сервер обрабатывает запросы, соответствующие условиям удаления.</li>
+            <li>Аккаунт и связанные персональные данные удаляются или обезличиваются в соответствии с установленной процедурой.</li>
+            <li>После завершения удаления восстановить аккаунт невозможно.</li>
+          </ul>
+
+          <p>Отправка запроса не означает, что удаление
+          уже завершено.</p>`
+      },
+      {
+        title: "4. Аккаунты студентов",
+        content: `
+          <p>Студенты могут запрашивать удаление своих
+          аккаунтов непосредственно через приложение.</p>
+
+          <p>После обработки удаление может привести
+          к безвозвратной потере данных профиля,
+          сведений о подтверждении статуса студента,
+          сохранённых предложений, реферальных преимуществ,
+          бонусных баллов и истории аккаунта.</p>`
+      },
+      {
+        title: "5. Аккаунты поставщиков",
+        content: `
+          <p>Поставщики также могут запрашивать удаление
+          аккаунтов STUDIGO через приложение.</p>
+
+          <p>Однако удаление аккаунта поставщика может
+          быть ограничено при наличии незавершённых заявок
+          на вывод средств или финансовых обязательств.</p>
+
+          <div class="info-box">
+            <strong>Ожидающие выплаты</strong>
+            <p>Аккаунты поставщиков с ожидающими заявками
+            на вывод средств нельзя удалить до урегулирования
+            соответствующих обязательств.</p>
+          </div>`
+      },
+      {
+        title: "6. Удаление аккаунтов администратором",
+        content: `
+          <p>Уполномоченные администраторы STUDIGO могут
+          инициировать удаление аккаунтов студентов
+          и поставщиков через административный интерфейс.</p>
+
+          <p>Такие запросы проходят серверную проверку
+          полномочий и соответствия аккаунта условиям удаления.
+          Администраторы не могут использовать эту функцию
+          для удаления аккаунтов других администраторов.</p>`
+      },
+      {
+        title: "7. Какие данные будут удалены?",
+        content: `
+          <p>В зависимости от типа аккаунта и связанных
+          с ним данных удаление может включать:</p>
+
+          <ul>
+            <li>Данные аккаунта и аутентификации.</li>
+            <li>Личные данные профиля и контакты.</li>
+            <li>Студенческий профиль и сведения о проверке.</li>
+            <li>Фотографии профиля и идентификаторы студента.</li>
+            <li>Реферальную информацию и бонусные балансы.</li>
+            <li>Избранное и настройки аккаунта.</li>
+            <li>Другие связанные персональные данные, которые больше не требуются.</li>
+          </ul>`
+      },
+      {
+        title: "8. Какие данные могут сохраняться?",
+        content: `
+          <p>Некоторые записи могут сохраняться, если это
+          необходимо для соблюдения законодательства,
+          бухгалтерского учёта, предотвращения мошенничества,
+          обеспечения безопасности или разрешения споров.</p>
+
+          <p>К ним могут относиться записи об операциях,
+          платежах и непогашенных финансовых обязательствах.</p>
+
+          <p>По возможности сохраняемые записи обезличиваются
+          или отделяются от данных, непосредственно
+          идентифицирующих пользователя.</p>
+
+          <p>Объём сохраняемых данных ограничивается
+          необходимым для соответствующей цели,
+          а срок хранения — применимым периодом.</p>`
+      },
+      {
+        title: "9. Важная информация",
+        content: `
+          <ul>
+            <li>Удаление аккаунта предполагается безвозвратным.</li>
+            <li>После завершения обработки удалённый аккаунт нельзя восстановить.</li>
+            <li>Удаление может привести к потере скидок, подписок, бонусных баллов, сохранённых предложений и других преимуществ.</li>
+            <li>Удаление приложения STUDIGO с устройства не удаляет аккаунт.</li>
+            <li>Выход из аккаунта не удаляет аккаунт.</li>
+            <li>Запросы по электронной почте могут требовать подтверждения личности.</li>
+          </ul>
+
+          <div class="notice">
+            <strong>Ваша конфиденциальность важна.</strong>
+            Подробнее о сборе, обработке и защите персональных
+            данных читайте в нашей
+            <a href="../privacy-policy/">Политике конфиденциальности</a>.
+          </div>`
+      },
+      {
+        title: "10. Контакты",
+        content: `
+          <p><strong>Служба поддержки STUDIGO</strong><br>
+          Узбекистан<br>
+          Электронная почта:
+          <a href="mailto:studigo.uz@gmail.com">studigo.uz@gmail.com</a></p>`
+      }
+    ]
+  },
+
+  uz: {
+    title: "Hisobni o‘chirish",
+    subtitle: "STUDIGO talabalar va hamkorlarga o‘z hisoblarini hamda ularga bog‘liq shaxsiy ma’lumotlarni ilova orqali butunlay o‘chirishni so‘rash imkonini beradi.",
+    home: "Bosh sahifa",
+    privacy: "Maxfiylik siyosati",
+    legal: "Huquqiy ma’lumotlar",
+
+    sections: [
+      {
+        title: "1. Ilova orqali hisobni o‘chirish",
+        content: `
+          <p>Hisobni o‘chirish so‘rovini bevosita
+          STUDIGO mobil ilovasi orqali yuborishingiz mumkin.</p>
+
+          <ol class="steps">
+            <li>STUDIGO ilovasini oching.</li>
+            <li>Hisobingizga kiring.</li>
+            <li>Profile (Profil) bo‘limini oching.</li>
+            <li>Settings (Sozlamalar) bo‘limiga o‘ting.</li>
+            <li>Delete Account (Hisobni o‘chirish) bandini toping.</li>
+            <li>Hisobni o‘chirish haqidagi ma’lumotlarni o‘qing.</li>
+            <li>O‘chirish so‘rovini tasdiqlang.</li>
+          </ol>
+
+          <div class="notice">
+            <strong>Administrator tasdig‘i talab qilinmaydi.</strong>
+            Ilova orqali yuborilgan so‘rovlar ro‘yxatga olinadi
+            va STUDIGO serveri tomonidan avtomatik qayta ishlanadi.
+            O‘chirish darhol amalga oshmasligi mumkin.
+          </div>`
+      },
+      {
+        title: "2. Elektron pochta orqali o‘chirish so‘rovi",
+        content: `
+          <p>Agar hisobingizga yoki ilovaga kira olmasangiz,
+          STUDIGO qo‘llab-quvvatlash xizmatiga murojaat
+          qilib, hisobni o‘chirishni so‘rashingiz mumkin.</p>
+
+          <ol class="steps">
+            <li>STUDIGO qo‘llab-quvvatlash xizmatiga xat yuboring.</li>
+            <li>Imkon bo‘lsa, STUDIGO hisobingizga bog‘langan elektron pochta manzilidan foydalaning.</li>
+            <li>Hisobingizni topishimiz uchun ro‘yxatdan o‘tgan email yoki telefon raqamingizni ko‘rsating.</li>
+            <li>Qo‘llab-quvvatlash xizmati hisob egasini tasdiqlash uchun qo‘shimcha ma’lumot so‘rashi mumkin.</li>
+            <li>Tasdiqlashdan so‘ng so‘rovingiz hisobni o‘chirish jarayoniga yuborilishi mumkin.</li>
+          </ol>
+
+          <a class="button" href="mailto:studigo.uz@gmail.com?subject=STUDIGO%20Account%20Deletion%20Request">
+            Hisobni o‘chirishni so‘rash
+          </a>
+
+          <p>Aloqa:
+          <a href="mailto:studigo.uz@gmail.com">studigo.uz@gmail.com</a></p>`
+      },
+      {
+        title: "3. Hisob qanday o‘chiriladi?",
+        content: `
+          <p>Ilova orqali hisobni o‘chirish bo‘yicha
+          tegishli so‘rov yuborilganda, STUDIGO uni
+          serverda avtomatik qayta ishlash uchun
+          ro‘yxatga oladi.</p>
+
+          <ul>
+            <li>So‘rov tizimda qayd etiladi.</li>
+            <li>Server o‘chirish shartlariga mos so‘rovlarni qayta ishlaydi.</li>
+            <li>Hisob va unga bog‘liq shaxsiy ma’lumotlar belgilangan tartibda o‘chiriladi yoki shaxssizlantiriladi.</li>
+            <li>O‘chirish tugallangach, hisobni qayta tiklab bo‘lmaydi.</li>
+          </ul>
+
+          <p>So‘rov yuborilishi o‘chirish jarayoni
+          allaqachon tugaganini anglatmaydi.</p>`
+      },
+      {
+        title: "4. Talaba hisoblari",
+        content: `
+          <p>Talabalar o‘z hisoblarini o‘chirish
+          so‘rovini bevosita ilova orqali yuborishlari mumkin.</p>
+
+          <p>So‘rov bajarilgandan so‘ng profil ma’lumotlari,
+          talabalik holatini tasdiqlash ma’lumotlari,
+          saqlangan takliflar, taklif dasturi imtiyozlari,
+          bonus ballari va hisob tarixi butunlay
+          yo‘qolishi mumkin.</p>`
+      },
+      {
+        title: "5. Hamkor hisoblari",
+        content: `
+          <p>Hamkorlar ham STUDIGO hisoblarini
+          ilova orqali o‘chirishni so‘rashlari mumkin.</p>
+
+          <p>Biroq mablag‘ yechib olish bo‘yicha
+          yakunlanmagan so‘rovlar yoki bajarilmagan
+          moliyaviy majburiyatlar mavjud bo‘lsa,
+          hisobni o‘chirish cheklanishi mumkin.</p>
+
+          <div class="info-box">
+            <strong>Kutilayotgan mablag‘ yechish so‘rovlari</strong>
+            <p>Mablag‘ yechib olish bo‘yicha kutilayotgan
+            so‘rovlari mavjud hamkor hisoblari tegishli
+            majburiyatlar hal etilmaguncha o‘chirilmaydi.</p>
+          </div>`
+      },
+      {
+        title: "6. Administrator tomonidan hisobni o‘chirish",
+        content: `
+          <p>STUDIGO vakolatli administratorlari
+          ma’muriy interfeys orqali talabalar va
+          hamkorlar hisoblarini o‘chirishni boshlashlari mumkin.</p>
+
+          <p>Bunday so‘rovlar server tomonidan vakolat
+          va hisobning o‘chirish shartlariga muvofiqligi
+          bo‘yicha tekshiriladi. Administratorlar
+          ushbu funksiya orqali boshqa administratorlarning
+          hisoblarini o‘chira olmaydi.</p>`
+      },
+      {
+        title: "7. Qaysi ma’lumotlar o‘chiriladi?",
+        content: `
+          <p>Hisob turi va unga bog‘liq ma’lumotlarga
+          qarab quyidagilar o‘chirilishi mumkin:</p>
+
+          <ul>
+            <li>Hisob va autentifikatsiya ma’lumotlari.</li>
+            <li>Shaxsiy profil va aloqa ma’lumotlari.</li>
+            <li>Talaba profili va tasdiqlash ma’lumotlari.</li>
+            <li>Profil fotosuratlari va talaba identifikatorlari.</li>
+            <li>Taklif dasturi ma’lumotlari va bonus balanslari.</li>
+            <li>Sevimlilar ro‘yxati va hisob sozlamalari.</li>
+            <li>Endi talab qilinmaydigan boshqa shaxsiy ma’lumotlar.</li>
+          </ul>`
+      },
+      {
+        title: "8. Qaysi ma’lumotlar saqlanishi mumkin?",
+        content: `
+          <p>Amaldagi qonunchilik, buxgalteriya
+          majburiyatlari, firibgarlikning oldini olish,
+          xavfsizlik talablari yoki nizolarni hal qilish
+          uchun ayrim yozuvlar saqlanishi mumkin.</p>
+
+          <p>Bunga operatsiya yozuvlari, to‘lovga oid
+          ma’lumotlar va bajarilmagan moliyaviy
+          majburiyatlarga tegishli yozuvlar kirishi mumkin.</p>
+
+          <p>Zarur hollarda saqlanadigan ma’lumotlar
+          shaxssizlantirilishi yoki shaxsni bevosita
+          aniqlovchi ma’lumotlardan ajratilishi mumkin.</p>
+
+          <p>Saqlanadigan ma’lumotlar tegishli maqsad
+          uchun zarur hajm bilan cheklanadi va faqat
+          qo‘llaniladigan muddat davomida saqlanadi.</p>`
+      },
+      {
+        title: "9. Muhim ma’lumotlar",
+        content: `
+          <ul>
+            <li>Hisobni o‘chirish doimiy bo‘lishi nazarda tutilgan.</li>
+            <li>O‘chirish jarayoni tugagach, hisobni qayta tiklab bo‘lmaydi.</li>
+            <li>O‘chirish chegirmalar, obunalar, bonus ballari, saqlangan takliflar va boshqa imtiyozlarning yo‘qolishiga olib kelishi mumkin.</li>
+            <li>STUDIGO ilovasini qurilmadan olib tashlash hisobni o‘chirmaydi.</li>
+            <li>Hisobdan chiqish hisobni o‘chirmaydi.</li>
+            <li>Elektron pochta orqali yuborilgan so‘rovlar shaxsni tasdiqlashni talab qilishi mumkin.</li>
+          </ul>
+
+          <div class="notice">
+            <strong>Maxfiyligingiz biz uchun muhim.</strong>
+            Shaxsiy ma’lumotlarni yig‘ish, qayta ishlash
+            va himoya qilish haqida batafsil ma’lumot
+            olish uchun
+            <a href="../privacy-policy/">Maxfiylik siyosati</a>
+            bilan tanishing.
+          </div>`
+      },
+      {
+        title: "10. Bog‘lanish",
+        content: `
+          <p><strong>STUDIGO qo‘llab-quvvatlash xizmati</strong><br>
+          O‘zbekiston<br>
+          Elektron pochta:
+          <a href="mailto:studigo.uz@gmail.com">studigo.uz@gmail.com</a></p>`
+      }
+    ]
+  }
+
+};
+
+function changeLanguage(lang) {
+  if (!Object.prototype.hasOwnProperty.call(pages, lang)) {
+    lang = "en";
+  }
+
+  const data = pages[lang];
+
+  document.documentElement.lang = lang;
+  document.title = data.title + " | STUDIGO";
+
+  document.getElementById("page-title").textContent = data.title;
+  document.getElementById("page-subtitle").textContent = data.subtitle;
+  document.getElementById("home-link").textContent = data.home;
+  document.getElementById("privacy-link").textContent = data.privacy;
+
+  document.getElementById("deletion-content").innerHTML =
+    data.sections.map(section => `
+      <section>
+        <h2>${section.title}</h2>
+        ${section.content}
+      </section>
+    `).join("");
+
+  const footer = document.getElementById("footer-links");
+  footer.textContent = "";
+
+  const homeLink = document.createElement("a");
+  homeLink.href = "../";
+  homeLink.textContent = data.legal;
+
+  const privacyLink = document.createElement("a");
+  privacyLink.href = "../privacy-policy/";
+  privacyLink.textContent = data.privacy;
+
+  footer.append(homeLink, " · ", privacyLink);
+
+  document.querySelectorAll(".lang-btn").forEach(button => {
+    const active = button.dataset.lang === lang;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+
+  try {
+    localStorage.setItem("studigo_legal_language", lang);
+  } catch (error) {
+    // Language switching still works without browser storage.
+  }
+}
+
+document.querySelectorAll(".lang-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    changeLanguage(button.dataset.lang);
+  });
+});
+
+let initialLanguage = "en";
+
+try {
+  const savedLanguage = localStorage.getItem("studigo_legal_language");
+  if (savedLanguage && pages[savedLanguage]) {
+    initialLanguage = savedLanguage;
+  }
+} catch (error) {
+  // English is used if browser storage is unavailable.
+}
+
+changeLanguage(initialLanguage);
+</script>
 
 </body>
 </html>
