@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for STUDIGO, the student benefits and discounts platform.">
+  <meta name="description" content="STUDIGO Privacy Policy in English, Russian and Uzbek.">
   <title>Privacy Policy | STUDIGO</title>
+
   <style>
     :root {
       --primary: #7455e8;
@@ -14,7 +15,9 @@
       --bg: #f7f8fc;
       --border: #e8eaf2;
     }
+
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: Inter, -apple-system, BlinkMacSystemFont,
@@ -23,11 +26,13 @@
       color: var(--navy);
       line-height: 1.75;
     }
+
     header {
       background: #fff;
       border-bottom: 1px solid var(--border);
       padding: 22px 24px;
     }
+
     .header-inner {
       max-width: 900px;
       margin: auto;
@@ -36,6 +41,7 @@
       align-items: center;
       gap: 16px;
     }
+
     .logo {
       font-size: 28px;
       font-weight: 800;
@@ -43,19 +49,24 @@
       text-decoration: none;
       color: var(--navy);
     }
+
     .logo span { color: var(--primary); }
+
     nav a {
       color: var(--muted);
       text-decoration: none;
       font-size: 14px;
       margin-left: 18px;
     }
+
     nav a:hover { color: var(--primary); }
+
     main {
       max-width: 900px;
       margin: 55px auto;
       padding: 0 24px;
     }
+
     .eyebrow {
       color: var(--primary);
       text-transform: uppercase;
@@ -63,31 +74,71 @@
       font-weight: 700;
       letter-spacing: 1.5px;
     }
+
     h1 {
       font-size: clamp(32px, 5vw, 44px);
       line-height: 1.2;
       letter-spacing: -1.3px;
       margin: 12px 0;
     }
+
     .subtitle { color: var(--muted); }
+
+    .language-switcher {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 25px 0;
+    }
+
+    .lang-btn {
+      padding: 10px 18px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--navy);
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .lang-btn:hover {
+      border-color: var(--primary);
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
     .document {
-      margin-top: 30px;
+      margin-top: 25px;
       background: #fff;
       border: 1px solid var(--border);
       border-radius: 18px;
       padding: 42px;
     }
+
     h2 {
       font-size: 21px;
       line-height: 1.4;
       margin: 36px 0 12px;
     }
+
     h2:first-child { margin-top: 0; }
+
     p, li { font-size: 15px; }
+
     p { margin: 0 0 16px; }
+
     ul { padding-left: 22px; }
+
     li { margin-bottom: 9px; }
+
     a { color: var(--primary); }
+
     .notice {
       background: #f4f0ff;
       border-left: 4px solid var(--primary);
@@ -96,6 +147,7 @@
       margin: 24px 0;
       font-size: 14px;
     }
+
     footer {
       max-width: 900px;
       margin: 60px auto 0;
@@ -108,403 +160,1140 @@
       flex-wrap: wrap;
       gap: 12px;
     }
+
     @media (max-width: 640px) {
       main { margin: 35px auto; }
       .document { padding: 25px 20px; }
       nav a { margin-left: 10px; font-size: 12px; }
+      .lang-btn { flex: 1; padding: 10px 8px; }
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <div class="header-inner">
     <a class="logo" href="../">studi<span>go</span></a>
     <nav>
-      <a href="../">Home</a>
-      <a href="../delete-account/">Delete Account</a>
+      <a href="../" id="home-link">Home</a>
+      <a href="../delete-account/" id="delete-link">Delete Account</a>
     </nav>
   </div>
 </header>
 
 <main>
   <div class="eyebrow">STUDIGO · Legal Center</div>
-  <h1>Privacy Policy</h1>
-  <p class="subtitle">
+
+  <h1 id="page-title">Privacy Policy</h1>
+
+  <p class="subtitle" id="updated">
     Last updated: November 1, 2026
   </p>
 
-  <article class="document">
+  <div class="language-switcher" role="group" aria-label="Language">
+    <button type="button" class="lang-btn active"
+            data-lang="en" aria-pressed="true">English</button>
+    <button type="button" class="lang-btn"
+            data-lang="ru" aria-pressed="false">Русский</button>
+    <button type="button" class="lang-btn"
+            data-lang="uz" aria-pressed="false">O‘zbekcha</button>
+  </div>
 
-    <h2>1. Introduction</h2>
-    <p>
-      Welcome to STUDIGO ("STUDIGO", "we", "us", or "our").
-      STUDIGO is a digital platform designed to connect
-      students with participating businesses and provide
-      access to student discounts, benefits, promotional
-      offers, and related services in Uzbekistan.
-    </p>
-    <p>
-      This Privacy Policy explains how personal information
-      is collected, used, stored, disclosed, and protected
-      when you use the STUDIGO mobile application and
-      related services.
-    </p>
-    <p>
-      By using STUDIGO, you acknowledge that you have
-      been informed about the data practices described
-      in this Privacy Policy.
-    </p>
-
-    <h2>2. Information We Collect</h2>
-    <p>
-      Depending on your account type and the features
-      you use, we may collect the following information:
-    </p>
-    <ul>
-      <li>
-        <strong>Account information:</strong>
-        first name, last name, email address, phone number,
-        and authentication information.
-      </li>
-      <li>
-        <strong>Student information:</strong>
-        year of birth, educational institution or student
-        status, verification status, student identification
-        code, and profile photograph.
-      </li>
-      <li>
-        <strong>Business partner information:</strong>
-        business name, contact information, business
-        profile details, products, discounts, and offers.
-      </li>
-      <li>
-        <strong>QR and activity information:</strong>
-        QR token identifiers, discount usage records,
-        transaction amounts, savings, participating
-        businesses, and timestamps.
-      </li>
-      <li>
-        <strong>Subscription information:</strong>
-        selected membership plan, subscription status,
-        and relevant billing records where applicable.
-      </li>
-      <li>
-        <strong>Referral and reward information:</strong>
-        referral codes, referral relationships,
-        reward points, and redemption history.
-      </li>
-      <li>
-        <strong>Technical information:</strong>
-        device-related information, diagnostic data,
-        security events, and application usage
-        information where collected by our services.
-      </li>
-    </ul>
-
-    <h2>3. How We Use Information</h2>
-    <p>We process information to:</p>
-    <ul>
-      <li>Create, maintain, and secure user accounts.</li>
-      <li>Verify student eligibility and account status.</li>
-      <li>Authenticate users and prevent unauthorized access.</li>
-      <li>Display participating businesses, products, and discounts.</li>
-      <li>Generate and validate student QR codes.</li>
-      <li>Record discount usage and calculate savings.</li>
-      <li>Manage subscriptions and membership benefits.</li>
-      <li>Administer referrals, reward points, and redemptions.</li>
-      <li>Provide customer support and service communications.</li>
-      <li>Detect fraud, misuse, and suspicious activity.</li>
-      <li>Maintain and improve application reliability and security.</li>
-      <li>Comply with applicable legal obligations.</li>
-    </ul>
-
-    <h2>4. Authentication and SMS Verification</h2>
-    <p>
-      STUDIGO may use email authentication and, where
-      implemented, SMS verification to confirm account
-      ownership, support sign-in, and protect accounts.
-    </p>
-    <p>
-      Phone numbers and verification-related information
-      may be processed by authentication and messaging
-      service providers for these purposes.
-    </p>
-
-    <h2>5. QR Codes and Discount Transactions</h2>
-    <p>
-      STUDIGO uses QR codes or student codes to help
-      participating businesses verify eligibility for
-      discounts and record qualifying transactions.
-    </p>
-    <p>
-      When a discount is used, relevant information
-      such as the participating business, transaction
-      amount, applied discount, savings, and time of
-      the transaction may be recorded.
-    </p>
-    <p>
-      Authorized business representatives may access
-      transaction information necessary to verify and
-      manage transactions involving their business.
-    </p>
-    <div class="notice">
-      STUDIGO's QR transaction records are used for
-      discount verification and activity tracking.
-      Recording a transaction does not necessarily mean
-      that STUDIGO processes the customer's payment.
-    </div>
-
-    <h2>6. Subscriptions and Payments</h2>
-    <p>
-      STUDIGO may offer STANDARD, PLUS, and PRO
-      membership plans with different benefits.
-    </p>
-    <p>
-      Where paid subscriptions are available, payment
-      processing may be performed by an authorized
-      payment service provider or an applicable
-      application marketplace.
-    </p>
-    <p>
-      STUDIGO may receive payment confirmation,
-      subscription status, transaction identifiers,
-      and billing-related information needed to
-      manage membership access.
-    </p>
-    <p>
-      Payment card information is handled according
-      to the practices of the applicable payment
-      provider. We do not require users to provide
-      full payment card details directly through
-      STUDIGO's discount-tracking features.
-    </p>
-
-    <h2>7. Referrals and Reward Points</h2>
-    <p>
-      STUDIGO may process referral codes, account
-      verification status, reward balances, and
-      redemption records to operate its referral
-      and rewards programs.
-    </p>
-    <p>
-      Information may also be used to detect duplicate
-      referrals, fraudulent activity, or abuse of
-      promotional benefits.
-    </p>
-
-    <h2>8. Service Providers and Data Storage</h2>
-    <p>
-      STUDIGO uses Supabase for backend services,
-      including database functionality, authentication,
-      and related infrastructure.
-    </p>
-    <p>
-      Information may be processed by Supabase and
-      other service providers that support application
-      hosting, authentication, messaging, security,
-      payment processing, or technical operations,
-      where those services are used.
-    </p>
-    <p>
-      Service providers are expected to process
-      information only as necessary for their
-      authorized functions and subject to applicable
-      contractual and legal requirements.
-    </p>
-
-    <h2>9. Sharing of Information</h2>
-    <p>
-      We may share relevant information with:
-    </p>
-    <ul>
-      <li>
-        Participating businesses, where necessary
-        to verify discounts and manage transactions.
-      </li>
-      <li>
-        Technology providers supporting the
-        operation and security of STUDIGO.
-      </li>
-      <li>
-        Payment providers, where payments
-        or subscriptions are processed.
-      </li>
-      <li>
-        Public authorities where disclosure
-        is required by applicable law.
-      </li>
-    </ul>
-    <p>
-      STUDIGO does not sell personal information
-      to third-party data brokers.
-    </p>
-
-    <h2>10. Data Security</h2>
-    <p>
-      We use technical and organizational measures
-      designed to protect personal information against
-      unauthorized access, alteration, disclosure,
-      and loss.
-    </p>
-    <p>
-      These measures may include authenticated access,
-      role-based permissions, database access policies,
-      and secure communications.
-    </p>
-    <p>
-      No electronic storage or transmission system
-      can be guaranteed to be completely secure.
-    </p>
-
-    <h2>11. Data Retention</h2>
-    <p>
-      We retain personal information for as long as reasonably
-      necessary to provide STUDIGO services, maintain account
-      functionality, resolve disputes, prevent fraud, protect
-      security, and comply with applicable laws.
-    </p>
-    <p>
-      When an eligible account deletion request is processed,
-      associated personal information is deleted or anonymized
-      in accordance with our account deletion procedures.
-      Submitting a request does not mean that deletion has
-      already been completed.
-    </p>
-    <p>
-      Certain transaction, accounting, withdrawal, or other
-      financial records may be retained where required by law
-      or necessary for legitimate accounting, security,
-      fraud-prevention, or dispute-resolution purposes.
-      Where appropriate, retained records may be anonymized
-      or separated from directly identifying account data.
-    </p>
-    <p>
-      Retained records are kept only for as long as necessary
-      for the applicable purpose or legally required period.
-    </p>
-
-    <h2>12. Your Privacy Rights</h2>
-    <p>
-      Subject to applicable law, users may request:
-    </p>
-    <ul>
-      <li>Access to their personal information.</li>
-      <li>Correction of inaccurate information.</li>
-      <li>Deletion of their account and associated personal data.</li>
-      <li>Information about how their data is processed.</li>
-      <li>Other rights provided by applicable law.</li>
-    </ul>
-    <p>
-      Students and suppliers can submit account deletion
-      requests directly through the STUDIGO application.
-      For other privacy requests, or if you cannot access
-      the application, contact
-      <a href="mailto:studigo.uz@gmail.com">studigo.uz@gmail.com</a>.
-      We may need to verify your identity before handling
-      requests made outside an authenticated account.
-    </p>
-
-    <h2>13. Account Deletion</h2>
-    <p>
-      Students and suppliers may request permanent deletion
-      of their STUDIGO accounts and associated personal data
-      directly from the mobile application.
-    </p>
-    <p>
-      To request deletion, sign in to STUDIGO, open
-      <strong>Profile</strong>, go to <strong>Settings</strong>,
-      select <strong>Delete Account</strong>, and confirm
-      the request.
-    </p>
-    <p>
-      Requests submitted through the application are
-      registered for automated server processing.
-      No manual administrator approval is required.
-      Deletion may not be immediate, and a submitted
-      request does not indicate that deletion is complete.
-    </p>
-    <p>
-      Authorized STUDIGO administrators may also initiate
-      deletion of student or supplier accounts, subject
-      to authorization and eligibility checks. Supplier
-      account deletion may be restricted while withdrawal
-      requests remain pending.
-    </p>
-    <p>
-      If you cannot access the application, you may contact
-      <a href="mailto:studigo.uz@gmail.com">studigo.uz@gmail.com</a>
-      to request account deletion. Requests made by email
-      may require verification of account ownership.
-    </p>
-    <p>
-      Upon completion, the account cannot be restored.
-      Certain financial or other records may be retained
-      where legally required or otherwise necessary for
-      legitimate purposes as described in Section 11.
-    </p>
-    <p>
-      For detailed instructions and information about
-      deleted and retained data, visit our
-      <a href="../delete-account/">Account Deletion page</a>.
-    </p>
-
-    <h2>14. Children's Privacy</h2>
-    <p>
-      STUDIGO is intended for eligible students and
-      participating business representatives.
-      Eligibility and age requirements may depend
-      on the services and features offered.
-    </p>
-    <p>
-      Where the processing of a minor's information
-      requires consent from a parent or legal guardian
-      under applicable law, appropriate consent must
-      be obtained before such processing.
-    </p>
-
-    <h2>15. International Data Processing</h2>
-    <p>
-      Some technology providers may process or store
-      information outside Uzbekistan.
-      Where international transfers occur, we seek
-      to comply with applicable data protection
-      requirements.
-    </p>
-
-    <h2>16. Changes to This Privacy Policy</h2>
-    <p>
-      We may update this Privacy Policy when our
-      services, technology, or legal obligations change.
-      The updated version will be published on this page
-      with a revised "Last updated" date.
-    </p>
-
-    <h2>17. Contact Us</h2>
-    <p>
-      If you have questions, concerns, or requests
-      relating to this Privacy Policy or your
-      personal information, please contact:
-    </p>
-    <p>
-      <strong>STUDIGO</strong><br>
-      Uzbekistan<br>
-      Email:
-      <a href="mailto:studigo.uz@gmail.com">
-        studigo.uz@gmail.com
-      </a>
-    </p>
-
-  </article>
+  <article class="document" id="policy-content"></article>
 </main>
 
 <footer>
   <span>© 2026 STUDIGO. All rights reserved.</span>
-  <span>
-    <a href="../">Legal Center</a> ·
-    <a href="../delete-account/">Delete Account</a>
-  </span>
+  <span id="footer-links"></span>
 </footer>
+
+<script>
+  const policies = {
+
+    en: {
+      title: "Privacy Policy",
+      updated: "Last updated: November 1, 2026",
+      home: "Home",
+      deletion: "Delete Account",
+      legal: "Legal Center",
+      sections: [
+
+        {
+          title: "1. Introduction",
+          content: `
+            <p>Welcome to STUDIGO ("STUDIGO", "we", "us", or "our").
+            STUDIGO is a digital platform designed to connect
+            students with participating businesses and provide
+            access to student discounts, benefits, promotional
+            offers, and related services in Uzbekistan.</p>
+            <p>This Privacy Policy explains how personal information
+            is collected, used, stored, disclosed, and protected
+            when you use the STUDIGO mobile application and
+            related services.</p>
+            <p>By using STUDIGO, you acknowledge that you have
+            been informed about the data practices described
+            in this Privacy Policy.</p>`
+        },
+
+        {
+          title: "2. Information We Collect",
+          content: `
+            <p>Depending on your account type and the features
+            you use, we may collect the following information:</p>
+            <ul>
+              <li><strong>Account information:</strong>
+              first name, last name, email address, phone number,
+              and authentication information.</li>
+              <li><strong>Student information:</strong>
+              year of birth, educational institution or student
+              status, verification status, student identification
+              code, and profile photograph.</li>
+              <li><strong>Business partner information:</strong>
+              business name, contact information, business
+              profile details, products, discounts, and offers.</li>
+              <li><strong>QR and activity information:</strong>
+              QR token identifiers, discount usage records,
+              transaction amounts, savings, participating
+              businesses, and timestamps.</li>
+              <li><strong>Subscription information:</strong>
+              selected membership plan, subscription status,
+              and relevant billing records where applicable.</li>
+              <li><strong>Referral and reward information:</strong>
+              referral codes, referral relationships,
+              reward points, and redemption history.</li>
+              <li><strong>Technical information:</strong>
+              device-related information, diagnostic data,
+              security events, and application usage information
+              where collected by our services.</li>
+            </ul>`
+        },
+
+        {
+          title: "3. How We Use Information",
+          content: `
+            <p>We process information to:</p>
+            <ul>
+              <li>Create, maintain, and secure user accounts.</li>
+              <li>Verify student eligibility and account status.</li>
+              <li>Authenticate users and prevent unauthorized access.</li>
+              <li>Display participating businesses, products, and discounts.</li>
+              <li>Generate and validate student QR codes.</li>
+              <li>Record discount usage and calculate savings.</li>
+              <li>Manage subscriptions and membership benefits.</li>
+              <li>Administer referrals, reward points, and redemptions.</li>
+              <li>Provide customer support and service communications.</li>
+              <li>Detect fraud, misuse, and suspicious activity.</li>
+              <li>Maintain and improve application reliability and security.</li>
+              <li>Comply with applicable legal obligations.</li>
+            </ul>`
+        },
+
+        {
+          title: "4. Authentication and SMS Verification",
+          content: `
+            <p>STUDIGO may use email authentication and, where
+            implemented, SMS verification to confirm account
+            ownership, support sign-in, and protect accounts.</p>
+            <p>Phone numbers and verification-related information
+            may be processed by authentication and messaging
+            service providers for these purposes.</p>`
+        },
+
+        {
+          title: "5. QR Codes and Discount Transactions",
+          content: `
+            <p>STUDIGO uses QR codes or student codes to help
+            participating businesses verify eligibility for
+            discounts and record qualifying transactions.</p>
+            <p>When a discount is used, relevant information
+            such as the participating business, transaction
+            amount, applied discount, savings, and time of
+            the transaction may be recorded.</p>
+            <p>Authorized business representatives may access
+            transaction information necessary to verify and
+            manage transactions involving their business.</p>
+            <div class="notice">
+              STUDIGO's QR transaction records are used for
+              discount verification and activity tracking.
+              Recording a transaction does not necessarily mean
+              that STUDIGO processes the customer's payment.
+            </div>`
+        },
+
+        {
+          title: "6. Subscriptions and Payments",
+          content: `
+            <p>STUDIGO may offer STANDARD, PLUS, and PRO
+            membership plans with different benefits.</p>
+            <p>Where paid subscriptions are available, payment
+            processing may be performed by an authorized payment
+            service provider or an applicable application marketplace.</p>
+            <p>STUDIGO may receive payment confirmation,
+            subscription status, transaction identifiers,
+            and billing-related information needed to
+            manage membership access.</p>
+            <p>Payment card information is handled according
+            to the practices of the applicable payment provider.
+            We do not require users to provide full payment card
+            details directly through STUDIGO's discount-tracking features.</p>`
+        },
+
+        {
+          title: "7. Referrals and Reward Points",
+          content: `
+            <p>STUDIGO may process referral codes, account
+            verification status, reward balances, and
+            redemption records to operate its referral
+            and rewards programs.</p>
+            <p>Information may also be used to detect duplicate
+            referrals, fraudulent activity, or abuse of
+            promotional benefits.</p>`
+        },
+
+        {
+          title: "8. Service Providers and Data Storage",
+          content: `
+            <p>STUDIGO uses Supabase for backend services,
+            including database functionality, authentication,
+            and related infrastructure.</p>
+            <p>Information may be processed by Supabase and
+            other service providers that support application
+            hosting, authentication, messaging, security,
+            payment processing, or technical operations,
+            where those services are used.</p>
+            <p>Service providers are expected to process
+            information only as necessary for their authorized
+            functions and subject to applicable contractual
+            and legal requirements.</p>`
+        },
+
+        {
+          title: "9. Sharing of Information",
+          content: `
+            <p>We may share relevant information with:</p>
+            <ul>
+              <li>Participating businesses, where necessary
+              to verify discounts and manage transactions.</li>
+              <li>Technology providers supporting the
+              operation and security of STUDIGO.</li>
+              <li>Payment providers, where payments
+              or subscriptions are processed.</li>
+              <li>Public authorities where disclosure
+              is required by applicable law.</li>
+            </ul>
+            <p>STUDIGO does not sell personal information
+            to third-party data brokers.</p>`
+        },
+
+        {
+          title: "10. Data Security",
+          content: `
+            <p>We use technical and organizational measures
+            designed to protect personal information against
+            unauthorized access, alteration, disclosure, and loss.</p>
+            <p>These measures may include authenticated access,
+            role-based permissions, database access policies,
+            and secure communications.</p>
+            <p>No electronic storage or transmission system
+            can be guaranteed to be completely secure.</p>`
+        },
+
+        {
+          title: "11. Data Retention",
+          content: `
+            <p>We retain personal information for as long as
+            reasonably necessary to provide STUDIGO services,
+            maintain account functionality, resolve disputes,
+            prevent fraud, protect security, and comply
+            with applicable laws.</p>
+            <p>When an eligible account deletion request is
+            processed, associated personal information is
+            deleted or anonymized in accordance with our
+            account deletion procedures. Submitting a request
+            does not mean deletion has already been completed.</p>
+            <p>Certain transaction, accounting, withdrawal,
+            or other financial records may be retained where
+            required by law or necessary for legitimate
+            accounting, security, fraud-prevention, or
+            dispute-resolution purposes.</p>
+            <p>Where appropriate, retained records may be
+            anonymized or separated from directly identifying
+            account data. Retained records are kept only for
+            as long as necessary for the applicable purpose
+            or legally required period.</p>`
+        },
+
+        {
+          title: "12. Your Privacy Rights",
+          content: `
+            <p>Subject to applicable law, users may request:</p>
+            <ul>
+              <li>Access to their personal information.</li>
+              <li>Correction of inaccurate information.</li>
+              <li>Deletion of their account and associated personal data.</li>
+              <li>Information about how their data is processed.</li>
+              <li>Other rights provided by applicable law.</li>
+            </ul>
+            <p>Students and suppliers can submit account deletion
+            requests directly through the STUDIGO application.</p>
+            <p>For other privacy requests, or if you cannot access
+            the application, contact
+            <a href="mailto:studigo.uz@gmail.com">studigo.uz@gmail.com</a>.
+            We may need to verify your identity before handling
+            requests made outside an authenticated account.</p>`
+        },
+
+        {
+          title: "13. Account Deletion",
+          content: `
+            <p>Students and suppliers may request permanent
+            deletion of their STUDIGO accounts and associated
+            personal data directly from the mobile application.</p>
+            <p>To request deletion, sign in to STUDIGO, open
+            <strong>Profile</strong>, go to <strong>Settings</strong>,
+            select <strong>Delete Account</strong>, and confirm
+            the request.</p>
+            <p>Requests submitted through the application are
+            registered for automated server processing.
+            No manual administrator approval is required.
+            Deletion may not be immediate, and a submitted
+            request does not indicate that deletion is complete.</p>
+            <p>Authorized STUDIGO administrators may also initiate
+            deletion of student or supplier accounts, subject to
+            authorization and eligibility checks. Supplier account
+            deletion may be restricted while withdrawal requests
+            remain pending.</p>
+            <p>If you cannot access the application, you may contact
+            <a href="mailto:studigo.uz@gmail.com">studigo.uz@gmail.com</a>
+            to request account deletion. Requests made by email
+            may require verification of account ownership.</p>
+            <p>Upon completion, the account cannot be restored.
+            Certain financial or other records may be retained
+            where legally required or otherwise necessary for
+            legitimate purposes as described in Section 11.</p>
+            <p>For detailed instructions and information about
+            deleted and retained data, visit our
+            <a href="../delete-account/">Account Deletion page</a>.</p>`
+        },
+
+        {
+          title: "14. Children's Privacy",
+          content: `
+            <p>STUDIGO is intended for eligible students and
+            participating business representatives.
+            Eligibility and age requirements may depend
+            on the services and features offered.</p>
+            <p>Where the processing of a minor's information
+            requires consent from a parent or legal guardian
+            under applicable law, appropriate consent must
+            be obtained before such processing.</p>`
+        },
+
+        {
+          title: "15. International Data Processing",
+          content: `
+            <p>Some technology providers may process or store
+            information outside Uzbekistan. Where international
+            transfers occur, we seek to comply with applicable
+            data protection requirements.</p>`
+        },
+
+        {
+          title: "16. Changes to This Privacy Policy",
+          content: `
+            <p>We may update this Privacy Policy when our
+            services, technology, or legal obligations change.
+            The updated version will be published on this page
+            with a revised "Last updated" date.</p>`
+        },
+
+        {
+          title: "17. Contact Us",
+          content: `
+            <p>If you have questions, concerns, or requests
+            relating to this Privacy Policy or your personal
+            information, please contact:</p>
+            <p><strong>STUDIGO</strong><br>
+            Uzbekistan<br>
+            Email:
+            <a href="mailto:studigo.uz@gmail.com">
+            studigo.uz@gmail.com</a></p>`
+        }
+
+      ]
+    },
+
+    ru: {
+      title: "Политика конфиденциальности",
+      updated: "Последнее обновление: 1 ноября 2026 года",
+      home: "Главная",
+      deletion: "Удаление аккаунта",
+      legal: "Юридическая информация",
+      sections: [
+
+        {
+          title: "1. Введение",
+          content: `
+            <p>Добро пожаловать в STUDIGO («STUDIGO», «мы»,
+            «нас» или «наш»). STUDIGO — цифровая платформа,
+            объединяющая студентов и участвующие компании
+            и предоставляющая доступ к студенческим скидкам,
+            преимуществам, акциям и сопутствующим услугам
+            в Узбекистане.</p>
+            <p>Настоящая Политика конфиденциальности объясняет,
+            как мы собираем, используем, храним, передаём
+            и защищаем персональные данные при использовании
+            мобильного приложения STUDIGO и связанных услуг.</p>
+            <p>Используя STUDIGO, вы подтверждаете,
+            что ознакомлены с описанными здесь
+            правилами обработки данных.</p>`
+        },
+
+        {
+          title: "2. Какие данные мы собираем",
+          content: `
+            <p>В зависимости от типа аккаунта и используемых
+            функций мы можем собирать следующие данные:</p>
+            <ul>
+              <li><strong>Данные аккаунта:</strong> имя, фамилия,
+              адрес электронной почты, номер телефона
+              и данные аутентификации.</li>
+              <li><strong>Данные студента:</strong> год рождения,
+              учебное заведение или статус студента,
+              статус проверки, идентификационный код
+              студента и фотография профиля.</li>
+              <li><strong>Данные бизнес-партнёров:</strong>
+              название компании, контактные данные,
+              сведения о компании, товарах, скидках
+              и предложениях.</li>
+              <li><strong>QR-коды и активность:</strong>
+              идентификаторы QR-токенов, история использования
+              скидок, суммы операций, экономия, участвующие
+              компании и время операций.</li>
+              <li><strong>Подписки:</strong> выбранный тариф,
+              статус подписки и применимые платёжные записи.</li>
+              <li><strong>Рефералы и бонусы:</strong> реферальные
+              коды, связи приглашений, баллы и история
+              их использования.</li>
+              <li><strong>Технические данные:</strong>
+              сведения об устройстве, диагностические данные,
+              события безопасности и информация об использовании
+              приложения, если она собирается нашими сервисами.</li>
+            </ul>`
+        },
+
+        {
+          title: "3. Как мы используем данные",
+          content: `
+            <p>Мы обрабатываем данные для следующих целей:</p>
+            <ul>
+              <li>Создание, обслуживание и защита аккаунтов.</li>
+              <li>Проверка статуса и права на студенческие льготы.</li>
+              <li>Аутентификация и предотвращение несанкционированного доступа.</li>
+              <li>Отображение компаний, товаров и скидок.</li>
+              <li>Создание и проверка студенческих QR-кодов.</li>
+              <li>Учёт скидок и расчёт экономии.</li>
+              <li>Управление подписками и преимуществами тарифов.</li>
+              <li>Управление приглашениями, баллами и их использованием.</li>
+              <li>Поддержка пользователей и сервисные уведомления.</li>
+              <li>Предотвращение мошенничества и злоупотреблений.</li>
+              <li>Обеспечение надёжности и безопасности приложения.</li>
+              <li>Соблюдение требований законодательства.</li>
+            </ul>`
+        },
+
+        {
+          title: "4. Аутентификация и SMS-проверка",
+          content: `
+            <p>STUDIGO может использовать аутентификацию
+            по электронной почте и, при наличии соответствующей
+            функции, SMS-подтверждение для проверки владельца
+            аккаунта, входа и защиты учётной записи.</p>
+            <p>Номера телефонов и данные проверки могут
+            обрабатываться поставщиками услуг аутентификации
+            и отправки сообщений для указанных целей.</p>`
+        },
+
+        {
+          title: "5. QR-коды и операции со скидками",
+          content: `
+            <p>STUDIGO использует QR-коды или студенческие
+            коды, чтобы участвующие компании могли проверять
+            право на скидки и регистрировать соответствующие
+            операции.</p>
+            <p>При использовании скидки могут записываться
+            сведения о компании, сумме операции, размере
+            скидки, экономии и времени операции.</p>
+            <p>Уполномоченные представители компаний могут
+            получать доступ к данным операций, необходимым
+            для проверки и управления операциями,
+            связанными с их компанией.</p>
+            <div class="notice">
+              Записи QR-операций используются для подтверждения
+              скидок и учёта активности. Регистрация операции
+              не обязательно означает, что STUDIGO обрабатывает
+              платёж пользователя.
+            </div>`
+        },
+
+        {
+          title: "6. Подписки и платежи",
+          content: `
+            <p>STUDIGO может предлагать тарифы STANDARD,
+            PLUS и PRO с различными преимуществами.</p>
+            <p>При наличии платных подписок обработка платежей
+            может осуществляться уполномоченным платёжным
+            провайдером или соответствующим магазином приложений.</p>
+            <p>STUDIGO может получать подтверждение оплаты,
+            статус подписки, идентификаторы операций
+            и сведения, необходимые для управления доступом.</p>
+            <p>Данные банковских карт обрабатываются согласно
+            правилам соответствующего платёжного провайдера.
+            Функции учёта скидок STUDIGO не требуют
+            предоставления полных данных банковской карты.</p>`
+        },
+
+        {
+          title: "7. Рефералы и бонусные баллы",
+          content: `
+            <p>STUDIGO может обрабатывать реферальные коды,
+            статус проверки аккаунтов, бонусные балансы
+            и историю использования баллов для работы
+            реферальной и бонусной программ.</p>
+            <p>Эти данные также могут использоваться
+            для выявления повторных приглашений,
+            мошенничества и злоупотреблений преимуществами.</p>`
+        },
+
+        {
+          title: "8. Поставщики услуг и хранение данных",
+          content: `
+            <p>STUDIGO использует Supabase для серверных
+            функций, включая базу данных, аутентификацию
+            и связанную инфраструктуру.</p>
+            <p>Данные могут обрабатываться Supabase и другими
+            поставщиками услуг хостинга, аутентификации,
+            отправки сообщений, безопасности, обработки
+            платежей и технического обслуживания,
+            когда соответствующие услуги используются.</p>
+            <p>Предполагается, что поставщики обрабатывают
+            данные только в объёме, необходимом для выполнения
+            разрешённых функций, с соблюдением применимых
+            договорных и правовых требований.</p>`
+        },
+
+        {
+          title: "9. Передача информации",
+          content: `
+            <p>Мы можем передавать необходимые данные:</p>
+            <ul>
+              <li>Участвующим компаниям — для проверки скидок
+              и управления операциями.</li>
+              <li>Технологическим поставщикам, обеспечивающим
+              работу и безопасность STUDIGO.</li>
+              <li>Платёжным провайдерам — при обработке
+              платежей или подписок.</li>
+              <li>Государственным органам — когда раскрытие
+              информации требуется законодательством.</li>
+            </ul>
+            <p>STUDIGO не продаёт персональные данные
+            сторонним брокерам данных.</p>`
+        },
+
+        {
+          title: "10. Безопасность данных",
+          content: `
+            <p>Мы применяем технические и организационные
+            меры для защиты персональных данных от
+            несанкционированного доступа, изменения,
+            раскрытия и утраты.</p>
+            <p>Такие меры могут включать аутентификацию,
+            разграничение прав доступа, политики доступа
+            к базе данных и защищённую передачу информации.</p>
+            <p>Ни одна электронная система хранения
+            или передачи данных не может гарантировать
+            абсолютную безопасность.</p>`
+        },
+
+        {
+          title: "11. Сроки хранения данных",
+          content: `
+            <p>Мы храним персональные данные столько,
+            сколько разумно необходимо для предоставления
+            услуг STUDIGO, работы аккаунтов, разрешения
+            споров, предотвращения мошенничества,
+            обеспечения безопасности и соблюдения закона.</p>
+            <p>После обработки допустимого запроса
+            на удаление аккаунта связанные персональные
+            данные удаляются или обезличиваются в соответствии
+            с нашими процедурами. Отправка запроса сама
+            по себе не означает завершения удаления.</p>
+            <p>Некоторые записи об операциях, бухгалтерском
+            учёте, выводе средств и других финансовых
+            обязательствах могут сохраняться, если этого
+            требует закон либо это необходимо для учёта,
+            безопасности, предотвращения мошенничества
+            или разрешения споров.</p>
+            <p>По возможности сохраняемые записи
+            обезличиваются или отделяются от данных,
+            непосредственно идентифицирующих пользователя.
+            Они хранятся только в течение необходимого
+            или установленного законом срока.</p>`
+        },
+
+        {
+          title: "12. Ваши права",
+          content: `
+            <p>В соответствии с применимым законодательством
+            пользователи могут запрашивать:</p>
+            <ul>
+              <li>Доступ к своим персональным данным.</li>
+              <li>Исправление неточной информации.</li>
+              <li>Удаление аккаунта и связанных персональных данных.</li>
+              <li>Информацию о порядке обработки данных.</li>
+              <li>Реализацию других предусмотренных законом прав.</li>
+            </ul>
+            <p>Студенты и поставщики могут отправлять запросы
+            на удаление аккаунта непосредственно через
+            приложение STUDIGO.</p>
+            <p>По другим вопросам конфиденциальности
+            или при отсутствии доступа к приложению
+            обращайтесь по адресу
+            <a href="mailto:studigo.uz@gmail.com">studigo.uz@gmail.com</a>.
+            При обращении вне авторизованного аккаунта
+            может потребоваться подтверждение личности.</p>`
+        },
+
+        {
+          title: "13. Удаление аккаунта",
+          content: `
+            <p>Студенты и поставщики могут запросить
+            безвозвратное удаление аккаунта STUDIGO
+            и связанных персональных данных непосредственно
+            через мобильное приложение.</p>
+            <p>Для этого войдите в STUDIGO, откройте
+            <strong>Profile</strong>, перейдите в
+            <strong>Settings</strong>, выберите
+            <strong>Delete Account</strong> и подтвердите запрос.</p>
+            <p>Запросы регистрируются для автоматической
+            обработки сервером. Ручное одобрение администратора
+            не требуется. Удаление может произойти не сразу;
+            отправка запроса не означает, что аккаунт
+            уже удалён.</p>
+            <p>Уполномоченные администраторы STUDIGO также
+            могут инициировать удаление аккаунтов студентов
+            и поставщиков при соблюдении проверок полномочий
+            и условий удаления. Удаление аккаунта поставщика
+            может быть ограничено при наличии ожидающих
+            заявок на вывод средств.</p>
+            <p>Если у вас нет доступа к приложению,
+            отправьте запрос на
+            <a href="mailto:studigo.uz@gmail.com">studigo.uz@gmail.com</a>.
+            Для запросов по электронной почте может
+            потребоваться подтверждение владельца аккаунта.</p>
+            <p>После завершения удаления восстановить
+            аккаунт невозможно. Некоторые финансовые
+            и иные записи могут сохраняться по законным
+            основаниям, указанным в разделе 11.</p>
+            <p>Подробная инструкция и сведения об удаляемых
+            и сохраняемых данных доступны на странице
+            <a href="../delete-account/">Удаление аккаунта</a>.</p>`
+        },
+
+        {
+          title: "14. Конфиденциальность несовершеннолетних",
+          content: `
+            <p>STUDIGO предназначен для соответствующих
+            требованиям студентов и представителей
+            участвующих компаний. Возрастные требования
+            и условия доступа могут зависеть от
+            конкретных услуг и функций.</p>
+            <p>Если применимое законодательство требует
+            согласия родителя или законного представителя
+            для обработки данных несовершеннолетнего,
+            такое согласие должно быть получено
+            до начала обработки.</p>`
+        },
+
+        {
+          title: "15. Международная обработка данных",
+          content: `
+            <p>Некоторые технологические поставщики могут
+            обрабатывать или хранить информацию за пределами
+            Узбекистана. При международной передаче данных
+            мы стремимся соблюдать применимые требования
+            законодательства о защите данных.</p>`
+        },
+
+        {
+          title: "16. Изменения политики",
+          content: `
+            <p>Мы можем обновлять настоящую Политику
+            конфиденциальности при изменении услуг,
+            технологий или правовых обязательств.
+            Обновлённая версия публикуется на этой
+            странице с новой датой последнего обновления.</p>`
+        },
+
+        {
+          title: "17. Контакты",
+          content: `
+            <p>По вопросам настоящей Политики
+            конфиденциальности и обработки персональных
+            данных обращайтесь:</p>
+            <p><strong>STUDIGO</strong><br>
+            Узбекистан<br>
+            Электронная почта:
+            <a href="mailto:studigo.uz@gmail.com">
+            studigo.uz@gmail.com</a></p>`
+        }
+
+      ]
+    },
+
+    uz: {
+      title: "Maxfiylik siyosati",
+      updated: "Oxirgi yangilanish: 2026-yil 1-noyabr",
+      home: "Bosh sahifa",
+      deletion: "Hisobni o‘chirish",
+      legal: "Huquqiy ma’lumotlar",
+      sections: [
+
+        {
+          title: "1. Kirish",
+          content: `
+            <p>STUDIGO platformasiga xush kelibsiz.
+            STUDIGO ("biz", "bizning") — O‘zbekistondagi
+            talabalarni hamkor korxonalar bilan bog‘laydigan
+            hamda talabalar uchun chegirmalar, imtiyozlar,
+            aksiyalar va tegishli xizmatlardan foydalanish
+            imkonini beradigan raqamli platformadir.</p>
+            <p>Ushbu Maxfiylik siyosati STUDIGO mobil ilovasi
+            va unga tegishli xizmatlardan foydalanganda
+            shaxsiy ma’lumotlar qanday yig‘ilishi,
+            ishlatilishi, saqlanishi, oshkor etilishi
+            va himoya qilinishini tushuntiradi.</p>
+            <p>STUDIGO xizmatlaridan foydalanish orqali
+            siz ushbu siyosatda bayon etilgan ma’lumotlarni
+            qayta ishlash tartibi bilan tanishganingizni
+            tasdiqlaysiz.</p>`
+        },
+
+        {
+          title: "2. Biz yig‘adigan ma’lumotlar",
+          content: `
+            <p>Hisobingiz turi va foydalanadigan
+            funksiyalaringizga qarab quyidagi
+            ma’lumotlarni yig‘ishimiz mumkin:</p>
+            <ul>
+              <li><strong>Hisob ma’lumotlari:</strong>
+              ism, familiya, elektron pochta manzili,
+              telefon raqami va autentifikatsiya ma’lumotlari.</li>
+              <li><strong>Talaba ma’lumotlari:</strong>
+              tug‘ilgan yil, ta’lim muassasasi yoki
+              talabalik holati, tasdiqlash holati,
+              talabaning identifikatsiya kodi
+              va profil fotosurati.</li>
+              <li><strong>Biznes hamkor ma’lumotlari:</strong>
+              korxona nomi, aloqa ma’lumotlari,
+              korxona profili, mahsulotlar,
+              chegirmalar va takliflar.</li>
+              <li><strong>QR va faollik ma’lumotlari:</strong>
+              QR token identifikatorlari, chegirmalardan
+              foydalanish tarixi, operatsiya summalari,
+              tejalgan mablag‘lar, hamkor korxonalar
+              va vaqt belgilari.</li>
+              <li><strong>Obuna ma’lumotlari:</strong>
+              tanlangan tarif, obuna holati va zarur
+              hollarda to‘lovga oid yozuvlar.</li>
+              <li><strong>Taklif va mukofot ma’lumotlari:</strong>
+              taklif kodlari, taklif orqali bog‘langan
+              hisoblar, bonus ballari va ulardan
+              foydalanish tarixi.</li>
+              <li><strong>Texnik ma’lumotlar:</strong>
+              qurilmaga oid ma’lumotlar, diagnostika
+              yozuvlari, xavfsizlik hodisalari va
+              xizmatlarimiz tomonidan yig‘iladigan
+              ilovadan foydalanish ma’lumotlari.</li>
+            </ul>`
+        },
+
+        {
+          title: "3. Ma’lumotlardan foydalanish",
+          content: `
+            <p>Ma’lumotlarni quyidagi maqsadlarda
+            qayta ishlaymiz:</p>
+            <ul>
+              <li>Foydalanuvchi hisoblarini yaratish,
+              yuritish va himoya qilish.</li>
+              <li>Talabalik maqomi va imtiyozlarga
+              muvofiqlikni tekshirish.</li>
+              <li>Foydalanuvchini autentifikatsiya qilish
+              va ruxsatsiz kirishning oldini olish.</li>
+              <li>Hamkor korxonalar, mahsulotlar
+              va chegirmalarni ko‘rsatish.</li>
+              <li>Talaba QR kodlarini yaratish va tekshirish.</li>
+              <li>Chegirmalardan foydalanishni qayd etish
+              va tejalgan mablag‘ni hisoblash.</li>
+              <li>Obunalar va tarif imtiyozlarini boshqarish.</li>
+              <li>Takliflar, bonus ballari va ulardan
+              foydalanishni boshqarish.</li>
+              <li>Foydalanuvchilarga yordam ko‘rsatish
+              va xizmat xabarlarini yuborish.</li>
+              <li>Firibgarlik va suiiste’mollikni aniqlash.</li>
+              <li>Ilovaning barqarorligi va xavfsizligini ta’minlash.</li>
+              <li>Amaldagi qonunchilik talablariga rioya qilish.</li>
+            </ul>`
+        },
+
+        {
+          title: "4. Autentifikatsiya va SMS tasdiqlash",
+          content: `
+            <p>STUDIGO hisob egasini tasdiqlash,
+            tizimga kirishni ta’minlash va hisobni
+            himoya qilish uchun elektron pochta
+            orqali autentifikatsiyadan hamda
+            joriy etilgan hollarda SMS tasdiqlashdan
+            foydalanishi mumkin.</p>
+            <p>Telefon raqamlari va tasdiqlashga oid
+            ma’lumotlar ushbu maqsadlar uchun
+            autentifikatsiya va xabar yuborish
+            xizmatlari tomonidan qayta ishlanishi mumkin.</p>`
+        },
+
+        {
+          title: "5. QR kodlar va chegirma operatsiyalari",
+          content: `
+            <p>STUDIGO hamkor korxonalarga chegirmaga
+            muvofiqlikni tekshirish va tegishli
+            operatsiyalarni qayd etish imkonini berish
+            uchun QR kodlar yoki talaba kodlaridan foydalanadi.</p>
+            <p>Chegirmadan foydalanilganda hamkor korxona,
+            operatsiya summasi, qo‘llangan chegirma,
+            tejalgan mablag‘ va operatsiya vaqti
+            kabi ma’lumotlar qayd etilishi mumkin.</p>
+            <p>Vakolatli korxona vakillari o‘z korxonasiga
+            tegishli operatsiyalarni tekshirish va boshqarish
+            uchun zarur ma’lumotlardan foydalanishi mumkin.</p>
+            <div class="notice">
+              STUDIGO QR operatsiya yozuvlaridan
+              chegirmalarni tasdiqlash va faollikni
+              hisobga olish uchun foydalanadi.
+              Operatsiyaning qayd etilishi STUDIGO
+              mijoz to‘lovini qayta ishlashini
+              anglatmaydi.
+            </div>`
+        },
+
+        {
+          title: "6. Obunalar va to‘lovlar",
+          content: `
+            <p>STUDIGO turli imtiyozlarga ega STANDARD,
+            PLUS va PRO tariflarini taklif qilishi mumkin.</p>
+            <p>Pullik obunalar mavjud bo‘lgan hollarda
+            to‘lovlar vakolatli to‘lov provayderi
+            yoki tegishli ilovalar do‘koni
+            tomonidan qayta ishlanishi mumkin.</p>
+            <p>STUDIGO obunani boshqarish uchun to‘lov
+            tasdig‘i, obuna holati, operatsiya
+            identifikatorlari va hisob-kitobga oid
+            zarur ma’lumotlarni olishi mumkin.</p>
+            <p>Bank kartasi ma’lumotlari tegishli
+            to‘lov provayderining qoidalariga muvofiq
+            qayta ishlanadi. STUDIGO chegirmalarni
+            hisobga olish funksiyalarida bank kartasining
+            to‘liq ma’lumotlarini taqdim etishni talab qilmaydi.</p>`
+        },
+
+        {
+          title: "7. Takliflar va bonus ballari",
+          content: `
+            <p>STUDIGO taklif va mukofot dasturlarini
+            yuritish uchun taklif kodlari, hisoblarni
+            tasdiqlash holati, bonus balanslari
+            va ballardan foydalanish tarixini
+            qayta ishlashi mumkin.</p>
+            <p>Ushbu ma’lumotlar takroriy takliflarni,
+            firibgarlikni va imtiyozlardan noqonuniy
+            foydalanishni aniqlash uchun ham ishlatilishi mumkin.</p>`
+        },
+
+        {
+          title: "8. Xizmat ko‘rsatuvchilar va ma’lumotlarni saqlash",
+          content: `
+            <p>STUDIGO ma’lumotlar bazasi,
+            autentifikatsiya va tegishli infratuzilma
+            uchun Supabase xizmatidan foydalanadi.</p>
+            <p>Ma’lumotlar Supabase va ilova hostingi,
+            autentifikatsiya, xabar yuborish,
+            xavfsizlik, to‘lovlarni qayta ishlash
+            yoki texnik faoliyatni ta’minlovchi
+            boshqa xizmat ko‘rsatuvchilar tomonidan,
+            ushbu xizmatlardan foydalanilgan hollarda,
+            qayta ishlanishi mumkin.</p>
+            <p>Xizmat ko‘rsatuvchilar ma’lumotlarni
+            faqat ruxsat etilgan vazifalarni bajarish
+            uchun zarur darajada va tegishli shartnomaviy
+            hamda qonuniy talablar asosida
+            qayta ishlashi kutiladi.</p>`
+        },
+
+        {
+          title: "9. Ma’lumotlarni ulashish",
+          content: `
+            <p>Zarur ma’lumotlarni quyidagilar bilan
+            ulashishimiz mumkin:</p>
+            <ul>
+              <li>Chegirmalarni tekshirish va operatsiyalarni
+              boshqarish uchun hamkor korxonalar.</li>
+              <li>STUDIGO faoliyati va xavfsizligini
+              ta’minlovchi texnologik xizmat ko‘rsatuvchilar.</li>
+              <li>To‘lovlar yoki obunalar qayta ishlanganda
+              to‘lov provayderlari.</li>
+              <li>Qonunchilik talab qilgan hollarda
+              vakolatli davlat organlari.</li>
+            </ul>
+            <p>STUDIGO shaxsiy ma’lumotlarni uchinchi
+            tomon ma’lumot brokerlariga sotmaydi.</p>`
+        },
+
+        {
+          title: "10. Ma’lumotlar xavfsizligi",
+          content: `
+            <p>Shaxsiy ma’lumotlarni ruxsatsiz kirish,
+            o‘zgartirish, oshkor etish va yo‘qotishdan
+            himoya qilish uchun texnik va tashkiliy
+            choralarni qo‘llaymiz.</p>
+            <p>Bu choralar autentifikatsiya,
+            rollarga asoslangan ruxsatlar,
+            ma’lumotlar bazasiga kirish siyosatlari
+            va xavfsiz aloqa kanallarini o‘z
+            ichiga olishi mumkin.</p>
+            <p>Hech bir elektron saqlash yoki uzatish
+            tizimi mutlaq xavfsizlikni kafolatlay olmaydi.</p>`
+        },
+
+        {
+          title: "11. Ma’lumotlarni saqlash muddati",
+          content: `
+            <p>Shaxsiy ma’lumotlarni STUDIGO xizmatlarini
+            taqdim etish, hisob faoliyatini ta’minlash,
+            nizolarni hal qilish, firibgarlikning oldini
+            olish, xavfsizlikni himoya qilish va
+            qonuniy majburiyatlarni bajarish uchun
+            oqilona zarur bo‘lgan muddat davomida saqlaymiz.</p>
+            <p>Hisobni o‘chirish bo‘yicha tegishli so‘rov
+            qayta ishlangandan so‘ng, unga bog‘liq
+            shaxsiy ma’lumotlar belgilangan tartibda
+            o‘chiriladi yoki shaxssizlantiriladi.
+            So‘rov yuborilishi o‘chirish jarayoni
+            tugaganini anglatmaydi.</p>
+            <p>Ayrim operatsiyalar, buxgalteriya,
+            mablag‘ yechib olish yoki boshqa moliyaviy
+            yozuvlar qonun talab qilganda yoxud
+            hisob-kitob, xavfsizlik, firibgarlikning
+            oldini olish yoki nizolarni hal qilish
+            uchun zarur bo‘lganda saqlanishi mumkin.</p>
+            <p>Imkon qadar saqlanadigan yozuvlar
+            shaxssizlantiriladi yoki shaxsni bevosita
+            aniqlovchi ma’lumotlardan ajratiladi.
+            Ular faqat zarur yoki qonunda belgilangan
+            muddat davomida saqlanadi.</p>`
+        },
+
+        {
+          title: "12. Maxfiylik bo‘yicha huquqlaringiz",
+          content: `
+            <p>Amaldagi qonunchilikka muvofiq
+            foydalanuvchilar quyidagilarni so‘rashi mumkin:</p>
+            <ul>
+              <li>O‘z shaxsiy ma’lumotlariga kirish.</li>
+              <li>Noto‘g‘ri ma’lumotlarni tuzatish.</li>
+              <li>Hisob va unga bog‘liq shaxsiy
+              ma’lumotlarni o‘chirish.</li>
+              <li>Ma’lumotlar qanday qayta ishlanishi
+              haqida axborot olish.</li>
+              <li>Qonunda nazarda tutilgan boshqa
+              huquqlardan foydalanish.</li>
+            </ul>
+            <p>Talabalar va hamkorlar hisobni o‘chirish
+            so‘rovini bevosita STUDIGO ilovasi
+            orqali yuborishlari mumkin.</p>
+            <p>Boshqa maxfiylik masalalari bo‘yicha
+            yoki ilovaga kira olmasangiz,
+            <a href="mailto:studigo.uz@gmail.com">studigo.uz@gmail.com</a>
+            manziliga murojaat qiling. Hisobga kirmasdan
+            yuborilgan so‘rovlar bo‘yicha shaxsni
+            tasdiqlash talab qilinishi mumkin.</p>`
+        },
+
+        {
+          title: "13. Hisobni o‘chirish",
+          content: `
+            <p>Talabalar va hamkorlar STUDIGO hisobini
+            va unga bog‘liq shaxsiy ma’lumotlarni
+            mobil ilova orqali butunlay o‘chirishni
+            so‘rashlari mumkin.</p>
+            <p>Buning uchun STUDIGO ilovasiga kiring,
+            <strong>Profile</strong> bo‘limini oching,
+            <strong>Settings</strong> bo‘limiga o‘ting,
+            <strong>Delete Account</strong> bandini
+            tanlang va so‘rovni tasdiqlang.</p>
+            <p>Ilova orqali yuborilgan so‘rovlar
+            server tomonidan avtomatik qayta ishlash
+            uchun ro‘yxatga olinadi.
+            Administratorning qo‘lda tasdiqlashi
+            talab qilinmaydi. O‘chirish darhol
+            amalga oshmasligi mumkin; so‘rov yuborilishi
+            hisob allaqachon o‘chirilganini anglatmaydi.</p>
+            <p>STUDIGO vakolatli administratorlari
+            ham talabalar va hamkorlar hisoblarini
+            tegishli vakolat va shartlar tekshirilgandan
+            so‘ng o‘chirishni boshlashlari mumkin.
+            Mablag‘ yechib olish bo‘yicha ko‘rib
+            chiqilayotgan so‘rovlari mavjud hamkor
+            hisobini o‘chirish cheklanishi mumkin.</p>
+            <p>Ilovaga kira olmasangiz,
+            <a href="mailto:studigo.uz@gmail.com">studigo.uz@gmail.com</a>
+            manziliga hisobni o‘chirish so‘rovini
+            yuboring. Elektron pochta orqali
+            yuborilgan so‘rovlar uchun hisob
+            egasini tasdiqlash talab qilinishi mumkin.</p>
+            <p>O‘chirish tugallangandan so‘ng hisobni
+            qayta tiklab bo‘lmaydi. Ayrim moliyaviy
+            va boshqa yozuvlar 11-bo‘limda ko‘rsatilgan
+            qonuniy asoslar bo‘yicha saqlanishi mumkin.</p>
+            <p>Batafsil ko‘rsatmalar va o‘chiriladigan
+            hamda saqlanadigan ma’lumotlar haqida
+            <a href="../delete-account/">Hisobni o‘chirish</a>
+            sahifasidan bilib olishingiz mumkin.</p>`
+        },
+
+        {
+          title: "14. Voyaga yetmaganlar maxfiyligi",
+          content: `
+            <p>STUDIGO tegishli talablarga javob
+            beradigan talabalar va hamkor korxonalar
+            vakillari uchun mo‘ljallangan.
+            Yosh va foydalanish talablari xizmatlar
+            hamda funksiyalarga qarab farq qilishi mumkin.</p>
+            <p>Agar amaldagi qonunchilik voyaga
+            yetmagan shaxsning ma’lumotlarini qayta
+            ishlash uchun ota-ona yoki qonuniy
+            vakil roziligini talab qilsa,
+            bunday rozilik ma’lumotlarni qayta
+            ishlashdan oldin olinishi kerak.</p>`
+        },
+
+        {
+          title: "15. Ma’lumotlarni xalqaro qayta ishlash",
+          content: `
+            <p>Ayrim texnologik xizmat ko‘rsatuvchilar
+            ma’lumotlarni O‘zbekiston hududidan
+            tashqarida qayta ishlashi yoki saqlashi mumkin.
+            Xalqaro ma’lumot uzatish holatlarida
+            amaldagi shaxsiy ma’lumotlarni himoya qilish
+            talablariga rioya etishga intilamiz.</p>`
+        },
+
+        {
+          title: "16. Maxfiylik siyosatidagi o‘zgarishlar",
+          content: `
+            <p>Xizmatlarimiz, texnologiyalarimiz yoki
+            qonuniy majburiyatlarimiz o‘zgarganda
+            ushbu Maxfiylik siyosatini yangilashimiz mumkin.
+            Yangilangan versiya ushbu sahifada
+            oxirgi yangilanish sanasi bilan e’lon qilinadi.</p>`
+        },
+
+        {
+          title: "17. Biz bilan bog‘lanish",
+          content: `
+            <p>Ushbu Maxfiylik siyosati yoki
+            shaxsiy ma’lumotlaringiz bo‘yicha
+            savol va so‘rovlaringiz bo‘lsa,
+            quyidagi manzilga murojaat qiling:</p>
+            <p><strong>STUDIGO</strong><br>
+            O‘zbekiston<br>
+            Elektron pochta:
+            <a href="mailto:studigo.uz@gmail.com">
+            studigo.uz@gmail.com</a></p>`
+        }
+
+      ]
+    }
+
+  };
+
+  function changeLanguage(lang) {
+    if (!Object.prototype.hasOwnProperty.call(policies, lang)) {
+      lang = "en";
+    }
+
+    const data = policies[lang];
+
+    document.documentElement.lang = lang;
+    document.title = data.title + " | STUDIGO";
+
+    document.getElementById("page-title").textContent = data.title;
+    document.getElementById("updated").textContent = data.updated;
+    document.getElementById("home-link").textContent = data.home;
+    document.getElementById("delete-link").textContent = data.deletion;
+
+    document.getElementById("policy-content").innerHTML =
+      data.sections.map(section => `
+        <section>
+          <h2>${section.title}</h2>
+          ${section.content}
+        </section>
+      `).join("");
+
+    const footer = document.getElementById("footer-links");
+    footer.textContent = "";
+
+    const homeLink = document.createElement("a");
+    homeLink.href = "../";
+    homeLink.textContent = data.legal;
+
+    const deleteLink = document.createElement("a");
+    deleteLink.href = "../delete-account/";
+    deleteLink.textContent = data.deletion;
+
+    footer.append(homeLink, " · ", deleteLink);
+
+    document.querySelectorAll(".lang-btn").forEach(button => {
+      const active = button.dataset.lang === lang;
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-pressed", String(active));
+    });
+
+    try {
+      localStorage.setItem("studigo_legal_language", lang);
+    } catch (error) {
+      // Language switching works without browser storage.
+    }
+  }
+
+  document.querySelectorAll(".lang-btn").forEach(button => {
+    button.addEventListener("click", () => {
+      changeLanguage(button.dataset.lang);
+    });
+  });
+
+  let initialLanguage = "en";
+
+  try {
+    const savedLanguage = localStorage.getItem("studigo_legal_language");
+    if (savedLanguage && policies[savedLanguage]) {
+      initialLanguage = savedLanguage;
+    }
+  } catch (error) {
+    // Use English if storage is unavailable.
+  }
+
+  changeLanguage(initialLanguage);
+</script>
 
 </body>
 </html>
